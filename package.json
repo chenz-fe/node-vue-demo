@@ -1,0 +1,36 @@
+{
+	"name": "demo",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"tsc": "tsc -w",
+		"nodemon": "NODE_ENV=development nodemon --inspect ./build",
+		"build": "NODE_ENV=production tsc -p ./tsconfig.prod.json"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"nodemon": "^1.19.1",
+		"body-parser": "^1.19.0"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended"
+		],
+		"rules": {
+			"vue/no-unused-components": "off",
+			"no-console": "off"
+		},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
+}
